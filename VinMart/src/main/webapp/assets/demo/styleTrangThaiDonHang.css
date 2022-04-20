@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.history#history .choose {
+    display: inline-block;
+    background: transparent;
+    width: 100%;
+}
+.order {
+    padding: 0 10px 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    overflow: hidden;
+}
+.order>.status:nth-child(1) {
+    /* border-bottom: 1px solid #ebebeb; */
+    margin: 0 -10px;
+    padding: 0 10px;
+}
+.order .infoOther {
+    width: 100%;
+    margin: 5px 0 10px;
+    position: relative;
+}
+.order .createdate {
+    display: inline-block;
+    width: 100%;
+}
+.orderstatus {
+    position: relative;
+    width: 140px;
+    float: right;
+    margin-bottom: 8px;
+}
+.orderstatus label.complete {
+    color: #008000;
+}
+.orderstatus label.statusdelivery {
+    width: 140px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-right: 15px;
+    float: right;
+    margin: 0 0 0 0;
+}
+.order .status label, .order .status span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.orderstatus label {
+    /*display: block;*/
+    position: relative;
+}
+.card label {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}
+.order .status .createdate i {
+    float: left;
+    margin-right: 1px;
+    font-style: normal;
+    line-height: 14px;
+    font-weight: bold;
+}
+.tpl-status1 {
+    background-position: -42px -45px;
+}
+[class^="tpl-"], [class*="tpl-"] {
+    background-image: url(//cdn.tgdd.vn/bachhoaxanh/www/Content/images/orderdetail.v202103132138.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 17px;
+    vertical-align: middle;
+    width: 22px;
+    height: 18px;
+    background-size: 380px auto;
+}
+.orderstatus label.statusdelivery:after {
+    content: '';
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    border: 1px solid #288ad6;
+    border-right-width: 0;
+    border-top-width: 0;
+    transform: rotate(
+-45deg
+);
+    -webkit-transform: rotate(
+-45deg
+);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    position: absolute;
+    top: 2px;
+    right: 3px;
+}
+.history#history h3.active {
+    border-bottom: 4px solid #ed1c24;
+    color: #ed1c24;
+}
+.history#history h3 {
+    padding: 15px 15px 5px;
+    display: inline-block;
+    color: #999;
+    cursor: pointer;
+}
+.orderstatus .list-status {
+    position: absolute;
+    top: 25px;
+    right: -3px;
+    background: darkseagreen;
+    padding: 13px;
+    z-index: 1;
+    padding-right: 12px;
+    border-radius: 8px;
+    width: 170px;
+    font-weight: normal;
+}
+.orderstatus .list-status:before {
+    content: '';
+    border-bottom: 8px solid #f6f6f6;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -6px;
+    left: 71px;
+    position: absolute;
+}
+.order .status {
+    border-bottom: 1px solid #ccc;
+}
+.tpl-status2, .tpl-status9 {
+    background-position: -76px -45px;
+}
+.tpl-status6 {
+    background-position: -175px -45px;
+}
+.tpl-status7 {
+    background-position: -241px -45px;
+}
+.tpl-status4, .tpl-status10 {
+    background-position: -209px -45px;
+}
+.hidden {
+    display: none !important;
+}
+.orderstatus label.statusdelivery.show-status:after {
+    border: 1px solid #288ad6;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    top: 7px;
+}

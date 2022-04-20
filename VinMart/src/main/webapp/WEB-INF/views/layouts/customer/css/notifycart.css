@@ -1,0 +1,131 @@
+@charset "ISO-8859-1";
+
+/* header notify */
+ .header__notify{
+    position: absolute;
+    top: 82%;
+    right: 0;
+    width: 350px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    cursor: default;
+    transform-origin: calc( 100% - 20px ) top; /* định ra duoc cái tâm để hiện ra, top right là góc phải trên cùng  */
+    animation: headerNotifyGrowth ease-in .2s;
+    display: none;
+    border-radius: 5px;
+
+   
+ }
+ .header__notify::before{
+     content: "";
+     border: 20px solid;
+     border-color: transparent transparent #ffffff transparent;
+     position: absolute;
+     right: 1px;
+     top: -26px;
+ }
+
+ /*  dùng để không bị trượt chuột ra khỏi thông báo*/
+ .header__notify::after{ 
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+    
+ }
+ @keyframes headerNotifyGrowth {
+     from{
+         transform: scale(0); /* độ lớn lên */
+         opacity: 0;
+     }
+     to {
+         transform: scale(1);
+         opacity: 1;
+     }
+ }
+ 
+ .header__notify-header{
+    height: 40px;
+    background-color: #ffffff;
+    
+ }
+ .header__notify-header h3{
+     color: #0080ff;
+     margin: 0 0 0 12px;
+     font-weight: 400;
+     font-size: 1.4rem;
+     line-height: 40px;
+    
+
+ }
+ 
+.header__notify-list{
+    padding-left: 0px;
+    padding-top: 0px;
+    
+ }
+ .header__notify-item{
+    display: block;
+ }
+
+.header__notify-item:hover{
+    background-color: #f7f7f7;
+}
+
+ .header__notify-link{
+    display: flex;
+    width: 100%;
+    padding: 12px; /* khoảng cách 12px */
+    text-decoration: none;
+    background-color: rgba(238, 75, 43, 0.09);
+    
+ }
+ .header__notify-img{
+    width: 48px; /* rộng 48 */
+    object-fit: contain; /* ảnh không bị méo */
+ }
+ .header__notify-info{
+    margin-left: 12px; /* cách ảnh ra */
+ }
+ .header__notify-name{
+    display: block; /* xuống hàng chữ */
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 400;
+ }
+ .header__notify-descriotion{
+    display: block; /* xuống hàng chữ */
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #756f6e;
+    margin-top: 4px;
+ }
+ .header__notify-footer{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 12px;	
+   
+ }
+ .header__notify-footer-btn{
+     text-decoration: none;
+      width: 100%;
+     color:  #0080ff;
+    font-weight: 400px;
+    font-size: 1.4rem;
+ }
+     
+ .text-cart{
+ background-color: #0fb2ef;
+ width:80%;
+ font-size: 1.4rem;
+ font-weight: 400px;
+ color: #ffff;
+ }
+ .notify-show:hover .header__notify{
+ 	display: block;
+ }
+ 
+ 
